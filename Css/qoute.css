@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.home{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/img-1.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.home h1{
+    font-size: 4rem;
+}
+/* .home .button{
+    padding-top: 80px;
+} */
+.home .button button{
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    background-color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+}
+
+.button button:hover{
+    color: #FFF;
+    background: rgba(119, 29, 183, 1);
+}

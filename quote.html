@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qoute</title>
+    <link rel="icon" href="/img/icon.png">
+    <link rel="stylesheet" href="/Css/all.min.css">
+    <link rel="stylesheet" href="/Css/bootstrap.css">
+    <link rel="stylesheet" href="/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Css/qoute.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="home text-center text-white poetsen-one-regular">
+        <div class="container">
+        <h1 class="pt-5 ">
+            Quote of the Day
+        </h1>
+        <p class="pt-4 pb-3 details">Press the button below to receive a random quote ..!</p>
+        </div>
+
+
+        <div class="button">
+            <button onclick="generateQuotes()" class="my-btn" id="btn">New Quote</button>
+
+            <article class="py-5" >
+                <p class="fs-2" id="details"></p>
+            </article>
+        </div>
+    </div>
+    <!-- BootStrap JS -->
+    <script src="/Js/bootstrap.bundle.min.js"></script>
+    <!-- main JS -->
+    <script src="/Js/qoute.js"></script>
+</body>
+</html>
