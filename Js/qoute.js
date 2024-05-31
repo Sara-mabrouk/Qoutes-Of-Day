@@ -1,7 +1,3 @@
-// “A friend is someone who knows all about you and still loves you.”
-// ― Elbert Hubbard
-// Don’t walk in front of me… I may not follow Don’t walk behind me… I may not lead Walk beside me… just be my friend
-
 var btn = document.getElementById("btn");
 var details = document.getElementById("details");
 
@@ -19,24 +15,23 @@ var quoteArray = [
 '" Keep away from people who try to belittle your ambitions. Small people always do that, but the really great make you feel that you, too, can become great" <p> ― Mark Twain ― </p>',
 '" Life is an awful, ugly place to not have a best friend" <p> ― Sarah Dessen ― </p>',
 
-
 ];
 // answer-1
 // ===========================>>
-function generateQuotes() {
-  var randIndx = Math.floor(Math.random() * quoteArray.length);
-details.innerHTML = quoteArray[randIndx];
-}
+// function generateQuotes() {
+//   var randIndx = Math.floor(Math.random() * quoteArray.length);
+// details.innerHTML = quoteArray[randIndx];
+// }
 // answer-2
 // ===========================>>
-// var num = -1;
-// function generateQuotes() {
-//     var randIndx = Math.floor(Math.random() * quoteArray.length);
-//     while (num == randIndx) {
-//         randIndx = Math.floor(Math.random() * quoteArray.length);
-//     }
-//     console.log(randIndx);
-//     document.getElementById("details").innerHTML = quoteArray[randIndx];
-//     num = randIndx;
-// }
+var num = -1;
+function generateQuotes() {
+    var randIndx = Math.floor(Math.random() * quoteArray.length);
+    while (num == randIndx) {
+        randIndx = Math.floor(Math.random() * quoteArray.length);
+    }
+    console.log(randIndx);
+    document.getElementById("details").innerHTML = quoteArray[randIndx];
+    num = randIndx;
+}
 
